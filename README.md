@@ -29,10 +29,10 @@ Demo credentials for all environments: **[miracuves.com/turo-clone → Demo sect
 Most rental scripts stop at "list + book." This platform ships with the features that actually run a peer-to-peer rental *business*:
 
 - **Smart Pricing Engine** — nightly prices adjust to demand, season, and local events — same dynamic-pricing algorithm Airbnb patented
-- **Verified Identity** — 
-- **Multi-Currency + Multi-Language** — government-ID + selfie + driver license verification — production-grade KYC
-- **Stripe Connect Payouts** — hosts can invite co-hosts, operations staff, cleaners — each with their own permission level
-- **Co-Host Permissions** — hosts get paid in their local currency, with 1099 / tax-handling in 30+ countries
+- **Verified Identity** — government-ID + selfie + driver license verification — production-grade KYC
+- **Multi-Currency + Multi-Language** — 40+ currencies, 15+ languages, locale-aware content — built for cross-border rentals
+- **Stripe Connect Payouts** — hosts get paid in their local currency, with 1099 / tax-handling in 30+ countries
+- **Co-Host Permissions** — hosts can invite co-hosts, operations staff, cleaners — each with their own permission level
 
 ## 📦 Core Features
 
