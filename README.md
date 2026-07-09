@@ -1,315 +1,119 @@
-# Turo Clone — White-Label Solution by Miracuves
+# Turo Clone — White-Label Rental & Booking Marketplace Platform by Miracuves
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxcar.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/turo-clone/)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/turo-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/turo-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXCar** is a production-ready, white-label Turo clone: a complete peer-to-peer rental platform with renter, host, and admin panels — delivered with **100% source code ownership** in **6 working days**.
+
+> 🚗 **See it running before you talk to anyone.** Live traveler app, host dashboard, and admin console — demo credentials are printed on the [solution page](https://miracuves.com/turo-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxcar.mimeld.com](https://mxcar.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/turo-clone/#demo) | Users, content, plans, analytics |
+| 📱 Renter App | [mas.mimeld.com](https://mas.mimeld.com) | Search, book, unlock, drive, rate |
+| 🌐 Web Booking | [mxcar.mimeld.com](https://mxcar.mimeld.com) | Full marketplace in browser |
+| 🔑 Host Dashboard | [Solution page → Demo](https://miracuves.com/turo-clone#demo) | Listings, calendar, pricing, payouts |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/turo-clone#demo) | Hosts, listings, payments, analytics |
 
-Demo credentials: [miracuves.com/turo-clone -> Demo section](https://miracuves.com/turo-clone/#demo)
-
-## What Makes This Turo Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Startup founders | Launch platform |
-| Agencies | White-label |
+Demo credentials for all environments: **[miracuves.com/turo-clone → Demo section](https://miracuves.com/turo-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Turo Clone Different
 
-1. User opens
-2. Selects
-3. Completes
-4. Payment
-5. Confirmation
+Most rental scripts stop at "list + book." This platform ships with the features that actually run a peer-to-peer rental *business*:
 
----
+- **Smart Pricing Engine** — nightly prices adjust to demand, season, and local events — same dynamic-pricing algorithm Airbnb patented
+- **Verified Identity** — 
+- **Multi-Currency + Multi-Language** — government-ID + selfie + driver license verification — production-grade KYC
+- **Stripe Connect Payouts** — hosts can invite co-hosts, operations staff, cleaners — each with their own permission level
+- **Co-Host Permissions** — hosts get paid in their local currency, with 1099 / tax-handling in 30+ countries
 
-## Core Features
+## 📦 Core Features
 
-### Renter App
-- Search cars
-- Book
-- GPS locate
-- Pay
+**Renter:** search & filters · map view · booking · verification · secure payment · reviews · messaging · multi-language
 
-### Owner App
-- List car
-- Calendar
-- Earnings
+**Host:** listing wizard · calendar management · smart pricing · guest messaging · payouts · analytics
 
----
+**Admin:** host verification · listing moderation · payment escrow · dispute resolution · analytics
 
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Engine** - Smart automation
-- **AI Pricing** - Dynamic rates
-- **AI Matching** - Best car suggestions
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Renter | Book,drive |
-| Owner | List,earn |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Renter App<br/>Flutter]
+    B[Web Booking<br/>Responsive]
+    W[Host Dashboard]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> ES[Elasticsearch<br/>Listings]
+    ES --> A
+    ES --> B
+    G --> PAY[Stripe Connect]
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps (Android + iOS) · Node.js backend · MongoDB · Stripe Connect · Elasticsearch for listings · Stripe Connect, regional gateways, multi-currency
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js |
-| DB | MongoDB |
-| Payments | Stripe |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$6,699**, transparent on the [solution page](https://miracuves.com/turo-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Transaction fees
-- Subscription
-- Premium
-- Commission per rental
-- Owner subscription
-- Insurance upsell
+Custom rental platforms run $80k–$350k and 5–10 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for host acquisition and demand-side marketing.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Turo Clone — Full Solution Page](https://miracuves.com/turo-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Rental App Cost in 2026?](https://miracuves.com/turo-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Turo Clone Script in 2026](https://miracuves.com/turo-clone/blog/) features, pricing & launch guide
+- 🧠 [Dynamic Pricing for Rentals](https://miracuves.com/turo-clone/blog/) revenue management, demand
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/turo-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
 
----
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
 
-## What's Included
-
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$$6,699** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
-
-**What is included:**
-
-- Renter
-- Owner
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
-
----
-**Pricing:** from **$3,699** — transparent on the [solution page](https://miracuves.com/turo-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## Why Not Build From Scratch?
+### ⚠️ Note on This Repository
 
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $$6,699 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/turo-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+
+*Keywords: turo clone, turo clone script, rental marketplace, white label, peer-to-peer rental, Flutter rental app, Node.js rental platform, booking platform*
 
 ---
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Large Market | Growing |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- On-demand
-- Digital
-- P2P car rental
-- Luxury cars
-- Long-term rental
-- RV rental
-
----
-
-## Client Testimonials
-
-> *"Launched in 6 days."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**Cost?**
-See pricing.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
-**Can I customize the branding?**
-Yes, full white-labeling included.
-
-**Do you provide post-launch support?**
-60 days free bug support included.
-
-**Can I add custom features?**
-Yes, we accommodate custom requests.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Uber Clone](https://github.com/Miracuves-Solutions/uber-clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/turo-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your P2P car rental platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/turo-clone](https://miracuves.com/turo-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: turo clone, turo script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Turo Clone
+{MX_NAME}         MXCar
+{CATEGORY}        Rental & Booking Marketplace Platform
+{DEMO_WEB}        mxcar.mimeld.com
+{PRICE}           $6,699
+{SLUG}            turo-clone
+{SOLUTION_URL}    https://miracuves.com/turo-clone/
+{VERTICAL}        travel_rental_other
+
+See /tmp/verticals/travel_rental_other.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
